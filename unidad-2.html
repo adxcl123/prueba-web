@@ -3,54 +3,573 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abigail</title>
+  <title>ARQUITECTURA COMPUS</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <section class="container">
-    
 
-    <br>
-    
-    <div class="row justify-content-center">
-      <div class="col-10 text-bg-primary">
-        Title
+  <!--barra principal -->
+  <nav class="navbar navbar-expand-md sticky-top " style="background-color: #fce4ec; "  data-bs-theme="dark">
+    <div class="container">
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="#offcanvas" aria-labelledby="#offcanvasLabel">
+        <div class="offcanvas-body">
+          <ul class="navbar-nav flex-grow-1 justify-content-between rounded-3" style="background-color: #f8cedc;">
+            <li class="nav-item"><a class="nav-link" href="#">
+              <svg class="bi" width="24" height="24"><use xlink:href="#aperture"/></svg>
+            </a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #000000; font-weight: bold; font-size: 18px;" href="/index.html"> INTRODUCCION</a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #000000; font-weight: bold; font-size: 18px;" href="/unidad-1.html">UNIDAD 1</a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #000000; font-weight: bold; font-size: 18px;" href="/unidad-2.html">UNIDAD 2</a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #000000; font-weight: bold; font-size: 18px;" href="/unidad-3.html">UNIDAD 3</a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #000000; font-weight: bold; font-size: 18px;" href="/unidad-4.html">UNIDAD 4</a></li>
+            <li class="nav-item"><a class="nav-link" style="color: #000000; font-weight: bold; font-size: 18px;" href="/practicas.html">PRACTICAS</a></li>
+              <svg class="bi" width="24" height="24"><use xlink:href="#cart"/></svg>
+            </a></li>
+          </ul>
+        </div>
       </div>
     </div>
+  </nav>
 
-    <br>
 
+
+
+<!--indice -->
+  <div class="sticky-top flex-shrink-0 p-3" style="position: fixed; top:60px; width: 280px; background-color: rgb(2, 2, 2);">
     <div class="row">
-      <div class="col-2">
-        <a href="/">INTRODUCCION</a>
+      <div class="col-md-4">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8l16 0" /><path d="M4 16l16 0" /></svg>
       </div>
-      <div class="col-2">
-        <a href="/unidad-1.html">UNIDAD 1</a>
-      </div>
-      <div class="col-2">
-        UNIDAD 2
-      </div>
-      <div class="col-2">
-        <a href="/unidad-3.html">UNIDAD 3</a>
-      </div>
-      <div class="col-2">
-        <a href="/unidad-4.html">UNIDAD 4</a>
-      </div>
-      <div class="col-2">
-        <a href="/practicas.html">PRACTICAS</a>
+      <div class="col-md-8">
+        <span class="fs-5 fw-semibold" style="color: pink;">
+          <p>INDICE</p>
+        </span>
       </div>
     </div>
 
+    <li class="border-top"></li>
+    <ul class="list-unstyled ps-0">
+      
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true" style="color: pink">
+          <svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-arrow-bar-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 20l0 -10" /><path d="M12 20l4 -4" /><path d="M12 20l-4 -4" /><path d="M4 4l16 0" /></svg>
+          2.1 Organización del procesador
+        </button>
+        <div class="collapse" id="home-collapse">
+          <ul class="btn-toggle-nav fw-normal pb-1 small">
+            <li><a href='#2.1' class="link-body-emphasis d-inline-flex text-decoration-none rounded text-white">2.1 Organización del procesador</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#otro" aria-expanded="true" style="color: pink">
+          <svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-arrow-bar-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 20l0 -10" /><path d="M12 20l4 -4" /><path d="M12 20l-4 -4" /><path d="M4 4l16 0" /></svg>
+          2.2 Estructuras de Registros
+        </button>
+        <div class="collapse show" id="otro">
+          <ul class="btn-toggle-nav fw-normal pb-1 small">
+            <li><a href="#2.2.1" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-white">2.2.1 Registros Visibles Para el Usuario</a></li>
+            <li><a href="#2.2.2" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-white">2.2.2 Registros de Control y de Estados</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#otroo" aria-expanded="true" style="color: pink">
+          <svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-arrow-bar-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 20l0 -10" /><path d="M12 20l4 -4" /><path d="M12 20l-4 -4" /><path d="M4 4l16 0" /></svg>
+          2.3 El Ciclo de Instrucciones
+        </button>
+        <div class="collapse show" id="otroo">
+          <ul class="btn-toggle-nav fw-normal pb-1 small">
+            <li><a href="#2.3.1" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-white">2.3.1 Ciclo Fetch-Decode-Execute</a></li>
+            <li><a href="#2.3.2" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-white">2.3.2 Segmentación de Instrucciones</a></li>
+            <li><a href="#2.3.3" class="link-body-emphasis d-inline-flex text-decoration-none rounded text-white">2.3.3 Conjunto de Instrucciones</a></li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="mb-1">
+        <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#ultimo" aria-expanded="true" style="color: pink">
+          <svg xmlns="http://www.w3.org/2000/svg"  class="icon icon-tabler icon-tabler-arrow-bar-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 20l0 -10" /><path d="M12 20l4 -4" /><path d="M12 20l-4 -4" /><path d="M4 4l16 0" /></svg>
+          2.4 Modos de Direccionamiento
+        </button>
+        <div class="collapse show" id="ultimo">
+          <ul class="btn-toggle-nav fw-normal pb-1 small">
+            <li><a href='#2.4' class="link-body-emphasis d-inline-flex text-decoration-none rounded text-white">2.4 Modos de Direccionamiento</a></li>
+          </ul>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+<!--acaba indice -->
+<br>
 
 
 
 
 
+
+
+<!-- cuadro principal -->
+  <section class="container">
+    <div style=" width:1000px; margin-left: 18%;">
+      <div class="opacity-75 rounded-3 overflow-hidden p-3 p-md-5   bg-body-tertiary">
+        <div class="row">
+            <div class="col-md-6 p-lg-5 my-5 ">
+                <h1 class="display-3 fw-bold" style="letter-spacing: 4px;">UNIDAD II</h1>
+                <h3 class="fw-normal text-muted mb-3" >Estructura y Funcionamiento de la Unidad Central de Procesamiento</h3>
+                <div class="d-flex gap-3 justify-content-center lead fw-normal">
+                </div>
+            </div>
+            <div class="col-md-6 d-flex justify-content-center" style="height: 400px;">
+               <img src="/images/Unidad2/principal.jpg" alt="">
+            </div>
+        </div>
+    </div>
+ 
+
+    <!--linea morada sin texto-->
+    <br>
+    <div class="row opacity-75" >
+      <div class="col-12 d-flex" >
+        <div class="p-0.5 rounded-3" style="width: 2000px; background-color:rgb(120, 37, 197)">
+          <p class="ms-3 text-center" style=" font-size: 23px; font-weight: bold;"></p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+  
+ 
+      <!--cuadro 4 imagen izq-->
+    <div class="py-5 opacity-75 rounded-3" style="width: 1000; background-color: rgb(161, 161, 241)">
+      <div class="row g-0">
+        <div class="col-md-4 d-flex justify-content-center" style="height: 200px;">
+          <img src="/images/Unidad2/procesador.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body ms-5 me-5">
+            <h5 class="card-title" id="2.1" style="font-size: 40px; font-weight: bold; " > 2.1 Organización del procesador
+            </h5>
+            <p class="card-text " style="font-size: 20px;"  >Los modelos de arquitectura de cómputo se refieren a las estructuras o diseños utilizados en la
+              La función principal es ejecutar instrucciones, la organización viene condicionada por las tareas
+                    que debe realizar y por cómo debe hacerlo operan según una señal de sincronización conocida como
+                    señal de reloj (es un cristal de cuarzo). Incluye tantos registros visibles para el usuario todo
+                    procesador dispone de 3 componentes<br><br>
+                    - UAL: que hace un conjunto de operaciones aritméticas lógicas con los datos almacenados dentro del
+                    procesador.<br>
+                    - Conjunto de registros: espacio de almacenamiento temporal de datos e instrucciones dentro del
+                    procesador.<br>
+                    - Unidad de control: circuito que controla el funcionamiento de todos los componentes del
+                    procesador.<br>
+                    Controla el movimiento de datos e instrucciones dentro y fuera del procesador y también las
+                    operaciones ALU.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <!--linea morada sin texto-->
+    <br>
+      <div class="row opacity-75" >
+        <div class="col-12 d-flex" >
+          <div class="p-0.5 rounded-3" style="width: 2000px; background-color:rgb(120, 37, 197)">
+             <p class="ms-3 text-center" style=" font-size: 23px; font-weight: bold;"></p>
+          </div>
+        </div>
+      </div>
+      <br>
+
+     <!--cuadro 5 imagen izq-->
+     <div class="py-5 opacity-75 rounded-3" style="width: 1000; background-color: rgb(248, 248, 248);">
+      <div class="row g-0">
+        <div class="col-md-4 d-flex justify-content-center" style="height: 150px;">
+          <img src="/images/Unidad2/registros.png" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body ms-5 me-5">
+            <h5 class="card-title" id="2.2" style="font-size: 40px; font-weight: bold;" >2.2 Estructuras de registros </h5>
+            <p class="card-text " style="font-size: 20px;"  >Esta arquitectura surgió en la universidad del mismo nombre, poco después de que la arquitectura Von
+              Newman apareciera en la universidad de Princeton. Al igual que en la arquitectura Von Newman, el
+              programa se almacena como un código numérico en la memoria, pero no en el mismo espacio de memoria
+              ni en el mismo formato que los datos. Por ejemplo, se pueden almacenar las instrucciones en doce
+              bits en la memoria de programa, mientras los datos de almacenan en ocho bits en una memoria
+              aparte</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+
+
+
+      <!--cuadros morado imagen derecha-->
+<div class="py-5 opacity-75 rounded-3" style="width: 1000; background-color: rgb(161, 161, 241)">
+  <div class="row g-0">
+    <div class="col-md-8">
+      <div class="card-body ms-5 me-5">
+        <h5 class=" card-title " id=2.2.1 style="font-size: 30px; font-weight: bold; color: rgb(120, 37, 197);" >2.2.1 Registros visibles para el usuario</h5>
+        <p class="card-text " style="font-size: 20px;" >
+          Son aquellos que pueden ser referenciado por medio del lenguaje maquina que ejecuta la CPU, los
+          registro que normalmente disponibles son:
+      </p></p>
+      </div>
+    </div>
+    <div class="col-md-4 d-flex justify-content-center" style="height: 200px;">
+      <img src="/images/Unidad2/re.png" class="img-fluid rounded-start" alt="...">
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="opacity-75 row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-center">Registros propósito general</h5>
+        <p class="card-text">Registros de propósito general, son aquellos que pueden guardar tanto datos como direcciones
+          <br>
+          <br>
+          <br>
+          <br>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-center">Registros de datos</h5>
+        <p class="card-text">Registro de datos, que pueden ser asignados por el programador a diversas funciones. En algunos
+          casos son de propósito general y pueden ser empleados por cualquier instrucción de máquina que lleve
+          a cabo operaciones sobre los datos.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-center">Registros de direcciones</h5>
+        <p class="card-text">Registros de direcciones, contienen direcciones en la memoria principal de datos y este tipo de
+          registro puede ser de propósito general o estar a un modo específico de direccionamiento.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-center">Códigos de condición,</h5>
+        <p class="card-text">también conocidos como indicadores o flags. Los códigos de condición, son bits
+          activados por el procesador como resultado de determinadas operaciones
+        <br>
+        <br>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<br>
+
+<!--cuadro 7 imagen izq-->
+<div class="py-5 opacity-75 rounded-3" style="width: 1000; background-color:rgb(161, 161, 241)">
+  <div class="row g-0">
+    <div class="col-md-12">
+      <div class="card-body ms-5 me-5">
+        <h5 class="card-title " id=2.2.2 style="font-size: 30px; font-weight: bold;" >2.2.2 Registros de control y de estados
+        </h5>
+        <p class="card-text " style="font-size: 20px; text-align: justify;"  ><b>Registros de control</b>
+          
+          <br>
+          Hay diversos registros de la CPU que se pueden emplear para controlar su funcionamiento. La mayoría
+          de éstos, en la mayor parte de las máquinas, no son visibles al usuario. Algunos de ellos pueden ser
+          visibles a instrucciones de máquina ejecutadas en un modo de control o de sistema operativo.
+          <br><br>
+          Naturalmente, máquinas diferentes tendrán diferentes organizaciones de registros y usará distinta
+          terminología. Se enumera aquí una lista razonablemente completa de tipos de registros, con una breve
+          descripción. Son esenciales cuatro registros para la ejecución de una instrucción: el contador de
+          programa, el registro de dirección, el registro de instrucción y el registro de datos.
+          <br><br>
+          El contador de programa contiene una dirección de instrucción. Típicamente, la CPU actualiza el PC
+          después de cada captación de instrucción de manera que siempre apunta a la siguiente instrucción a
+          ejecutar. Una instrucción de bifurcación o salto también modificará el contenido de PC. La
+          instrucción captada se carga en el registro de instrucción, donde son analizados el código de
+          operación y los campos de operando.
+          Se intercambian datos con la memoria por medio de registro de direcciones y el de datos. En un
+          sistema con organización de bus, el de direcciones se conecta directamente al bus de direcciones, y
+          el de datos directamente al bus de datos.
+          <br><br>
+          Los registros visibles al usuario, sucesivamente, intercambian datos con el de datos. Los cuatro
+          registros que acaban de mencionar se usan para la transferencia de datos entre la CPU y la memoria.
+          Dentro de la CPU, los datos tienen que ofrecerse a la ALU para su procesamiento. La ALU puede tener
+          acceso directo al de datos y a los registros visibles al usuario. Como alternativa, puede haber
+          registros intermedios adicionales en el límite de la ALU; estos registros sirven como registros de
+          entrada y salida de la ALU e intercambian datos con el de datos y los registros visibles al usuario.
+          <br><br><br><br>
+          <b>Registros de estado</b><br>
+          El registro de estado, también conocido como registro de bandera, palabra de estado del programa y
+          registro de código de condición, se define como un conjunto de bits de bandera dentro de un
+          procesador.
+          <br><br>
+          Un registro es un circuito procesador y es muy parecido a una ubicación de memoria, lo que significa
+          que los datos podrían escribirse y leerse. A diferencia de una ubicación de memoria, el registro de
+          estado a menudo no tiene una dirección porque el microprocesador la usa internamente. En una unidad
+          central de procesamiento (CPU) de 8 bits, se puede establecer un bit de registro de estado, igual al
+          número 1, o borrar , igual al número 0, mediante una variedad de resultados de operación del
+          procesador. El procesador a veces establece o borra los bits, pero otras veces, una instrucción de
+          programa particular establece o borra los bits.
+          <br><br>
+          Los bits de registro de estado también se denominan banderas o bits de bandera, y el programador los
+          utiliza para ciertos fines de programación. Cada bandera en un registro de estado tiene un propósito
+          único.
+          El indicador de acarreo se establece si una operación anterior hizo que el séptimo bit - o indicador
+          negativo - se desbordara, o hiciera que el indicador de transporte se desbordara. Se establece
+          durante los cambios de lógica, comparación y aritmética. El indicador de cero se establece si el
+          resultado de la operación más reciente fue 0.
+          <br><br>
+          Un indicador llamado "deshabilitar interrupción" funciona permitiendo o deshabilitando la operación
+          de interrupciones, que son instrucciones que detienen temporalmente ciertas operaciones para que se
+          puedan realizar otras operaciones. Cuando se establece este indicador en particular, no se permite
+          que funcionen las interrupciones, pero cuando está claro, se permiten las interrupciones. Otra
+          bandera llamada bandera decimal permite al procesador seguir un modo binario más avanzado para
+          realizar ecuaciones aritméticas impecables. Cuando se establece la bandera, utiliza este modo
+          binario avanzado. Otro bit de registro es el bit de interrupción, que se establece cuando se ejecuta
+          el comando Force Interrupt (BRK).
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--linea morada sin texto-->
+<br>
+<div class="row opacity-75" >
+  <div class="col-12 d-flex" >
+    <div class="p-0.5 rounded-3" style="width: 2000px; background-color:rgb(255, 255, 255)">
+       <p class="ms-3 text-center" style=" font-size: 23px; font-weight: bold;"></p>
+    </div>
+  </div>
+</div>
+<br>
+
+
+<!--subtitulo 2-->
+<div class="py-5 opacity-75 rounded-3" style="width: 1000; background-color: rgb(161, 161, 241)">
+  <div class="row g-0">
+    <div class="col-md-12">
+      <div class="card-body ms-5 me-5">
+        <h5 class="card-title" id=2.3 style="font-size: 40px; font-weight: bold; color: aliceblue;" >2.3 El ciclo de instrucciones</h5>
+        <p class="card-text " style="font-size: 20px;" >
+          La búsqueda es el proceso de obtener instrucciones de un programa o un elemento de datos de la
+          memoria. El término decodificar se refiere al proceso de traducir las instrucciones a señales que la
+          computadora puede ejecutar.
+          Ejecutar es el proceso de llevar a cabo los comandos. Almacenamiento en este contexto significa
+          escribir el resultado a la memoria.
+          <br><br>
+          En algunas computadoras, el procesador busca, decodifica, ejecuta y almacena solo una instrucción a
+          la vez. En estas computadoras el procesador espera hasta que una instrucción completa las cuatro
+          etapas del ciclo antes de iniciar a trabajar con la siguiente instrucción.
+          <br><br>
+          Hoy día la mayoría de las computadoras personales soportan un concepto llamado pipelining:
+          Con pipelining los procesadores inician la búsqueda de una segunda instrucción antes de que se haya
+          completado el ciclo de la computadora de la primera instrucción. Los procesadores que cuentan con
+          pipelining habilitado son más rápidos en el procesamiento porque no tienen que esperar para que una
+          instrucción complete el ciclo de computadora antes de buscar la siguiente.
+        </p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<br>
+
+
+<!--cuadros blanco imagen izq-->
+<div class="py-5 opacity-75 rounded-3" style="width: 1000; background-color: rgb(255, 255, 255)">
+  <div class="row g-0">
+    <div class="col-md-4 d-flex justify-content-center" style="height: 200px;">
+      <img src="/images/Unidad2/fde.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body ms-5 me-5">
+        <h5 class="card-title " id=2.3.1 style="font-size: 30px; font-weight: bold; color: rgb(120, 37, 197);" >2.3.1 Ciclo Fetch-Decode-Execute</h5>
+        <p class="card-text " style="font-size: 20px;" >
+          Un ciclo de instrucción (también llamado ciclo de fetch-and-execute o ciclo de fetch-decode-execute
+                    en inglés) es el período que tarda la unidad central de procesamiento (CPU) en ejecutar una
+                    instrucción de lenguaje máquina. Comprende una secuencia de acciones determinada que debe llevar a
+                    cabo el CPU para ejecutar cada instrucción en un programa. Cada instrucción del juego de
+                    instrucciones de un CPU puede requerir diferente número de ciclos de instrucción para su ejecución.
+                    Un ciclo de instrucción está formado por uno o más ciclos máquina. Para que cualquier sistema de
+                    proceso de datos basado en microprocesador (por ejemplo un ordenador o computadora personal) o
+                    microcontrolador (por ejemplo un reproductor de MP3) realice una tarea (programa) primero debe
+                    buscar cada instrucción en la memoria principal y luego ejecutarla.K</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<!--cuadros blanco imagen izq-->
+<div class="py-5 opacity-75 rounded-3" style="width: 1000; background-color: rgb(161, 161, 241)">
+  <div class="row g-0">
+    <div class="col-md-4 d-flex justify-content-center" style="height: 200px;">
+      <img src="/images/Unidad2/pipeline.gif" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body ms-5 me-5">
+        <h5 class="card-title " id=2.3.2 style="font-size: 30px; font-weight: bold; color: rgb(120, 37, 197);" >2.3.2 Segmentacion</h5>
+        <p class="card-text " style="font-size: 20px;" >
+          La segmentación de las instrucciones (pipeline) consiste en dividir el ciclo de ejecución de las
+          instrucciones en un conjunto de etapas. Estas etapas pueden coincidir o no con las fases del ciclo
+          de ejecución de las instrucciones.
+          <br><br>
+          El objetivo de la segmentación es ejecutar simultáneamente diferentes etapas de distintas
+          instrucciones, lo cual permite aumentar el rendimiento del procesador sin tener que hacer más
+          rápidas todas las unidades del procesador (ALU, UC, buses, etc.) y sin tener que duplicarlas.
+          <br><br>
+          La división de la ejecución de una instrucción en diferentes etapas se debe realizar de tal manera
+          que cada etapa tenga la misma duración, generalmente un ciclo de reloj. Es necesario añadir
+          registros para almacenar los resultados intermedios entre las diferentes etapas, de modo que la
+          información generada en una etapa esté disponible para la etapa siguiente. </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<br>
+<!--cuadros blanco imagen izq-->
+<div class="py-5 opacity-75 rounded-3" style="width: 1000; background-color: rgb(255, 255, 255)">
+  <div class="row g-0">
+    <div class="col-md-4 d-flex justify-content-center" style="height: 200px;">
+      <img src="/images/Unidad2/conjuntodeinstrucciones.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body ms-5 me-5">
+        <h5 class="card-title "id=2.3.3 style="font-size: 30px; font-weight: bold; color: rgb(120, 37, 197);" >2.3.3 Conjunto de instrucciones</h5>
+        <p class="card-text " style="font-size: 20px;" >
+          Un conjunto de instrucciones o repertorio de instrucciones, juego de instrucciones o ISA (del inglés
+                    Instruction Set Architecture, Arquitectura del Conjunto de Instrucciones) es una especificación que
+                    detalla las instrucciones que una CPU de un ordenador puede entender y ejecutar, o el conjunto de
+                    todos los comandos implementados por un diseño particular de una CPU.
+                    <br><br>
+                    El término describe los aspectos del procesador generalmente visibles a un programador, incluyendo
+                    los tipos de datos nativos, las instrucciones, los registros, la arquitectura de memoria y las
+                    interrupciones, entre otros aspectos.
+                    <br><br>
+                    Existe principalmente de 3 tipos: CISC (Complex Instruction Set Computer), RISC (Reduced Instruction
+                    Set Computer) y SISC (Specific Instruction Set Computer).
+                    <br><br>
+                    La arquitectura del conjunto de instrucciones (ISA) se emplea a veces para distinguir este conjunto
+                    de características de la microarquitectura, que son los elementos y técnicas que se emplean para
+                    implementar el conjunto de instrucciones. Entre estos elementos se encuentras las microinstrucciones
+                    y los sistemas de caché.<br>
+                    Procesadores con diferentes diseños internos pueden compartir un conjunto de instrucciones; por
+                    ejemplo el Intel Pentium y AMD Athlon implementan versiones casi idénticas del conjunto de
+                    instrucciones x86, aunque tienen diseños internos completamente opuestos. </p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+
+ <!--linea morada sin texto-->
+ <div class="row opacity-75" >
+  <div class="col-12 d-flex" >
+    <div class="p-1 rounded-3" style="width: 2000px; background-color:rgb(120, 37, 197)">
+      <p class="ms-3 text-center" style=" font-size: 23px; font-weight: bold;"></p>
+    </div>
+  </div>
+</div>
+<br>
+
+
+<!--subtitulo 3-->
+<div class="py-5 opacity-75 rounded-3" style="width: 1000; background-color: rgb(161, 161, 241)">
+  <div class="row g-0">
+    <div class="col-md-8">
+      <div class="card-body ms-5 me-5">
+        <h5 class="card-title " id=2.4 style="font-size: 40px; font-weight: bold;" >2.4 Modos de direccionamiento</h5>
+        <p class="card-text " style="font-size: 20px;" >
+          Contar con diferentes formatos de instrucciones, implica contar con diferentes formas de obtener los
+                    operandos de las instrucciones. Por lo general a estas múltiples formas se les conoce como modos de
+                    direccionamiento. Los modos de direccionamiento en MIPS son:
+                    <br><br>
+                    <b>Direccionamiento por registro</b>, donde los operandos son registros. Los datos a operar están
+                    contenidos en 2 registros de 32 bits y el resultado será colocado en otro registro, del mismo
+                    tamaño. Ejemplos de instrucciones que usan este modo de direccionamiento: add, sub, slt, etc.
+                    <br><br>
+                    <b>Direccionamiento base o desplazamiento</b>, donde uno de los operandos está en una localidad de
+                    memoria
+                    cuya dirección es la suma de un registro y una constante que forma parte de la misma instrucción.
+                    Ejemplos de instrucciones que usan este modo de direccionamiento: lw, sw, etc.
+                    <br><br>
+                    <b>Direccionamiento inmediato</b>, donde uno de los operandos es una constante que está en la misma
+                    instrucción. Ejemplos de instrucciones que usan este modo de direccionamiento: addi, slti, etc.
+                    <br><br>
+                    <b>Direccionamiento relativo al PC</b>, donde se forma una dirección sumando una constante, que está
+                    en la
+                    instrucción, con el registro PC (Program Counter). El resultado de la suma corresponde a la
+                    dirección destino si un brinco condicional se va a realizar. Ejemplos de instrucciones que usan este
+                    modo de direccionamiento: beq y bne.
+                    <br><br>
+                    <b>Direccionamiento pseudo directo</b>, donde la dirección destino de un salto corresponde a la
+                    concatenación de 26 bits que están en la misma instrucción con los bits más significativos del PC.
+                    Ejemplos de instrucciones que usan este modo de direccionamiento: j y jal.</p>
+      </div>
+    </div>
+    <div class="col-md-4 d-flex justify-content-center" style="height: 200px;">
+      <img src="/images/Unidad2/dir.png" class="img-fluid rounded-start" alt="...">
+    </div>
+  </div>
+</div>
+<br>
+
+
+
+
+
+
+      <br>
+      <!--pie de pagina-->
+      <footer class="opacity-75 py-5 text-center text-body-secondary bg-body-tertiary" style="font-size: 23px; font-weight: bold;">
+        <div style="color: rgb(120, 37, 197)">
+          <p>ABIGAIL EFRATA ESTRADA MARTINEZ</p>
+          <p>L21051416@saltillo.tecnm.mx</p>
+        </div>
+        <p><a href="https://saltillo.tecnm.mx/">PAGINA OFICIAL TEC SALTILLO</a></p>
+        <p class="mb-0">
+          <a href="#">REGRESAR AL INICIO</a>
+        </p>
+      </footer>
+    
+
+
+    </div>
+    
   </section>
-  <script>
-    console.log("Hello world in js");
-  </script>
+
+
+
+
+
+
+
+  <img src="images/1.jpg" alt="Descripción de la imagen" id="imagen-fondo">
+
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

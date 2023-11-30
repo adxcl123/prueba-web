@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu Mono', monospace;
+}
+#imagen-fondo {
+    position: fixed; /* Fija la imagen de fondo */
+    width: 100%; /* O ajusta el ancho según sea necesario */
+    height: 100%; /* O ajusta la altura según sea necesario */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+}
+.header-container {
+    background-color: #000000; /* Negro */
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+.header {
+    text-align: center;
+}
+.text-pink {
+    color: #FFC0CB; /* Rosa claro */
+}
+.text-ubuntu-mono {
+    font-family: 'Ubuntu Mono', monospace;
+}
+.font-bold {
+    font-weight: bold;
+}
